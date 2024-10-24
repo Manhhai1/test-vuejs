@@ -1,5 +1,10 @@
 module.exports = {
   presets: [
-    '@vue/cli-plugin-babel/preset'
-  ]
-}
+    '@babel/preset-env',
+    '@vue/babel-preset-jsx',
+  ],
+  plugins: [
+    '@babel/plugin-transform-private-methods',
+    // các plugin khác nếu có
+  ],
+};
