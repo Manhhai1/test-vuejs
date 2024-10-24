@@ -5,7 +5,7 @@
     <div class="pdf-list">
       <div v-for="pdf in pdfDataList" :key="pdf.id" class="pdf-item" @click="viewPdf(pdf)">
         <div class="pdf-container">
-          <VuePDF v-if="pdf.pdf" :pdf="pdf.pdf" :scale="0.4" text-layer annotation-layer />
+          <VuePDF v-if="pdf.pdf" :pdf="pdf.pdf"  text-layer annotation-layer />
         </div>
         <p>{{ pdf.name }}</p>
       </div>
